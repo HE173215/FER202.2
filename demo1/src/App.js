@@ -2,6 +2,7 @@ import './App.css';
 import FunctionMyButton from './components/FunctionMyButton';
 import ClassMyButton from './components/ClassMyButton';
 import ClassMyInput from './components/classMyInput'
+import MyList from './components/MyList';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <FunctionMyButton/>
       <ClassMyButton/>
       <ClassMyInput />
+      <MyList/>
     </div>
   );
 }
