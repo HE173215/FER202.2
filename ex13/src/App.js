@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ValidatedInput from './components/ValidatedInput';
 import WindowSize from './components/WindowSize';
 import CountdownTimer from './components/CountdownTimer';
-import UserPosts from './components/usePosts';
+import UserPosts from './components/userPosts';
 
 function App() {
   const [userId, setUserId] = useState(1);
@@ -16,6 +16,7 @@ function App() {
       <ValidatedInput
         validationFunction={(value) => value.length > 5}
         errorMessage="Value must be more than 5 characters"
+        Message="Done"
       />
 
       <h2>Window Size Listener</h2>

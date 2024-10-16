@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function ValidatedInput({ validationFunction, errorMessage }) {
+function ValidatedInput({ validationFunction, errorMessage, Message }) {
   const [value, setValue] = useState("");
   const [isValid, setIsValid] = useState(true);
 
@@ -17,6 +17,7 @@ function ValidatedInput({ validationFunction, errorMessage }) {
         className={isValid ? "" : "error"}
       />
       {!isValid && <p className="error-message">{errorMessage}</p>}
+      {isValid && <p className="error-message">{Message}</p>}
     </div>
   );
 }

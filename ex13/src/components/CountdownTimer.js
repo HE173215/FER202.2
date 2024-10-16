@@ -4,7 +4,6 @@ function CountdownTimer({ initialValue }) {
   const [timeRemaining, setTimeRemaining] = useState(initialValue);
 
   useEffect(() => {
-    // Reset timeRemaining whenever initialValue changes
     setTimeRemaining(initialValue);
   }, [initialValue]);
 
